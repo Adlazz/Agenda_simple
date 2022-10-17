@@ -17,17 +17,32 @@
             <input type="text" name="apellido" placeholder="Apellido">
             <input type="text" name="nombre" placeholder="Nombre">
             <input type="text" name="CUIT" placeholder="CUIT">
-            <input type="text" name="cond-iva" placeholder="Condicion IVA">
+
+            <label for="cond-iva">Cond IVA:</label>
+
+                <select name="cond-iva" id="cond-iva">
+                    <option value="ri">R.I.</option>
+                    <option value="monotributo">Monotributo</option>
+                    <option value="exento">Exento</option>
+                    <option value="otro">Otro</option>
+                </select>
             <button type="button">Agregar</button>
+    
         </div>
 
+        <!-- buscador -->
+
+        <input type="text" name="" id="search-bar" placeholder="buscar">
+
         <!-- contactos -->
-
-        <p>Nombre</p>
-        <p>Apellido</p>
-        <p>CUIT</p>
-        <p>Cond IVA</p>
-
+        <div class="contact-container">
+            <p>Nombre</p>
+            <p>Apellido</p>
+            <p>CUIT</p>
+            <p>Cond IVA</p>
+            <img src="" alt="btn-delete">
+            <img src="" alt="btn-copy">
+        </div>    
 
     </div>
 
