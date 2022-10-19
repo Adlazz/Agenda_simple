@@ -19,3 +19,5 @@ btn_agregar.onclick = () => {
     }
     guardar_contacto(db, contacto)
 }
+
+cargar_contacto(db, "listado-contactos")

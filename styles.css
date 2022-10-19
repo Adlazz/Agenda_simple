@@ -51,17 +51,20 @@ input, select, textarea, button{
 .form-search-datos input:active, input:focus {
     border-bottom: 1px solid dodgerblue;
 }
+
+/* BORRAR Arrows de input number */
     /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
     /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+/* Buttons */
 .form-search-datos button {
     margin: 1rem 0rem;
     line-height: 2.8rem;
@@ -69,16 +72,16 @@ input[type=number] {
     border: none;
     border-radius: 5px;
     text-transform: uppercase;
-
+    padding: 0.70rem 0;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
-/* Buttons */
 .form-search-datos button:hover {
     background-color: rgba(163, 2, 2, 0.9);
 }
 .form-search-datos button:active {
     background-color: rgba(228, 9, 9, 0.954);
     cursor: pointer;    
-
 }
 /* Select */
 .form-search-datos select {
@@ -88,16 +91,17 @@ input[type=number] {
     border: none;
     /* outline: none; */
 }
-.listado-contactos{
+/* Data */
+/* .listado-contactos{
 
-}
-
+} */
 .contacto {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 4rem;
 }
+/* Iconos */
 .icono-delete {
     color: tomato;
     cursor: pointer;    
@@ -105,4 +109,12 @@ input[type=number] {
 .icono-copy {
     color: dodgerblue;
     cursor: pointer;    
+} 
+.icono-delete:active {
+    color: rgb(253, 54, 54);
+    cursor: pointer;    
 }
+.icono-copy:active {
+    color: rgb(15, 15, 255);
+    cursor: pointer;    
+} 
