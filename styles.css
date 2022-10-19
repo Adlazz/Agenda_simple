@@ -4,12 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Globales */
 html{
     font-family: 'Poppins', sans-serif;
     font-size: 62.5%;  /* 1rem == 10px */
-}
-input, select, textarea, button{
-    font-family:inherit;
 }
 body{
     background-color: rgba(0,0,0,.75);
@@ -22,12 +20,14 @@ body{
     width: 70vw;
     margin: 2rem auto;
 }
+/* Titulo */
 .container h2{
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2.3rem;
 }
+/* Formulario y data */
 .form-search-datos {
     width: 50%;
     margin: 1rem auto;
@@ -35,17 +35,74 @@ body{
     display: flex;
     flex-direction: column;
 }
+/* Inputs */
+input, select, textarea, button{
+    font-family:inherit;
+    color: rgba(240, 240, 240, 0.9);
+}
 .form-search-datos input {
-    margin: 0.8rem 0rem;
+    margin: 1rem 0rem;
+    line-height: 2.8rem;
+    background: none;
+    border: 0;
+    outline: none;
+    color: white;
+}
+.form-search-datos input:active, input:focus {
+    border-bottom: 1px solid dodgerblue;
+}
+    /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+    /* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 .form-search-datos button {
-    margin: 0.8rem 0rem;
+    margin: 1rem 0rem;
+    line-height: 2.8rem;
+    background-color: rgba(197, 8, 8, 0.9);
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+
 }
+/* Buttons */
+.form-search-datos button:hover {
+    background-color: rgba(163, 2, 2, 0.9);
+}
+.form-search-datos button:active {
+    background-color: rgba(228, 9, 9, 0.954);
+    cursor: pointer;    
+
+}
+/* Select */
 .form-search-datos select {
-    margin: 0.8rem 0rem;
+    margin: 1rem 0rem;
+    line-height: 2.8rem;
+    background: none;
+    border: none;
+    /* outline: none; */
 }
+.listado-contactos{
+
+}
+
 .contacto {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 4rem;
+}
+.icono-delete {
+    color: tomato;
+    cursor: pointer;    
+}
+.icono-copy {
+    color: dodgerblue;
+    cursor: pointer;    
 }

@@ -21,10 +21,10 @@
             <!-- form -->
             <input type="text" class="apellido" placeholder="Apellido">
             <input type="text" class="nombre" placeholder="Nombre">
-            <input type="number" class="CUIT" placeholder="CUIT">
+            <input type="number" class="cuit" placeholder="CUIT">
             <label for="cond-iva">Cond IVA:</label>
-                <select name="cond-iva" id="cond-iva">
-                    <option value="ri">R.I.</option>
+                <select class="cond-iva" id="cond-iva">
+                    <option value="Resp. Inscripto">Resp. Inscripto</option>
                     <option value="monotributo">Monotributo</option>
                     <option value="exento">Exento</option>
                     <option value="otro">Otro</option>
@@ -39,17 +39,30 @@
                     <p>Adrian</p>
                     <p>20342079653</p>
                     <p>Monotributo</p>
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined icono-delete">
                         delete
                     </span>                
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined icono-copy">
+                        content_copy
+                    </span>            
+                </div> <!-- contacto -->
+                <div class="contacto">
+                    <p>Molina</p>
+                    <p>Pedro</p>
+                    <p>20286452253</p>
+                    <p>Resp. Inscripto</p>
+                    <span class="material-symbols-outlined icono-delete">
+                        delete
+                    </span>                
+                    <span class="material-symbols-outlined icono-copy">
                         content_copy
                     </span>            
                 </div> <!-- contacto -->
             </div>  <!-- listado-contactos -->
         </div> <!-- form-search-datos -->    
      </div> <!-- container -->
-
+     <script src="funciones.js"></script>
+     <script src="scripts.js"></script>
 
 </body>
 </html>
