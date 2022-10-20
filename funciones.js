@@ -32,7 +32,16 @@ const mostrarContacto = (parentNode, contacto, db) => {
         divContacto.classList.add("contacto")
         iconoDelete.classList.add("material-symbols-outlined", "icono-delete")
         iconoCopy.classList.add("material-symbols-outlined", "icono-copy")
-    
+        //Borrar 
+        iconoDelete.onclick = () =>{
+            db.removeItem(contacto.id)
+            window.location.href = "/"
+        }
+        //Copiar
+        iconoCopy.onclick = (db, contacto) =>{
+            db.clipboard(cuit.value)
+        }    
+
         divContacto.appendChild(apellidoContacto)
         divContacto.appendChild(nombreContacto)
         divContacto.appendChild(cuitContacto)
