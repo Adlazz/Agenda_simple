@@ -29,7 +29,7 @@ body{
 }
 /* Formulario y data */
 .form-search-datos {
-    width: 50%;
+    width: 60%;
     margin: 1rem auto;
     font-size: 1.5rem;
     display: flex;
