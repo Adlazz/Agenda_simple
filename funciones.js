@@ -31,17 +31,13 @@ const mostrarContacto = (parentNode, contacto, db) => {
         // agregar las clases a las etiquetas
         divContacto.classList.add("contacto")
         iconoDelete.classList.add("material-symbols-outlined", "icono-delete")
-        iconoCopy.classList.add("material-symbols-outlined", "icono-copy")
+        iconoCopy.classList.add("material-symbols-outlined", "icono-copy", "clipboard")
         //Borrar 
         iconoDelete.onclick = () =>{
             db.removeItem(contacto.id)
             window.location.href = "/"
         }
-        //Copiar
-        iconoCopy.onclick = (db, contacto) =>{
-            db.clipboard(cuit.value)
-        }    
-
+    
         divContacto.appendChild(apellidoContacto)
         divContacto.appendChild(nombreContacto)
         divContacto.appendChild(cuitContacto)
@@ -51,3 +47,15 @@ const mostrarContacto = (parentNode, contacto, db) => {
 
         parentNode.appendChild(divContacto)
 }
+
+    //Copiar
+    const buttonCopy = document.querySelector('.iconoCopy')
+    const copyData = document.querySelector('.clipboard')
+    console.log(copyData)
+
+    buttonCopy.addEventListener('click', function(){
+        p.focus();
+        document.execCommand('selectAll');
+        document.execCommand('copy');
+
+    } )
